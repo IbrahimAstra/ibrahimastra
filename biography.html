@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography - Ibrahim Astra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #059669;
+            --accent: #10b981;
+            --muted: #f1f5f9;
+            --foreground: #475569;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-600">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-semibold text-slate-800">Ibrahim Astra</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-slate-600 hover:text-emerald-600">Home</a>
+                    <a href="biography.html" class="nav-link text-emerald-600">Biography</a>
+                    <a href="social.html" class="nav-link text-slate-600 hover:text-emerald-600">Social Media</a>
+                    <a href="awards.html" class="nav-link text-slate-600 hover:text-emerald-600">Awards</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-slate-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-6xl font-light mb-6 text-slate-800">A Glimpse of My Life</h1>
+                <div class="w-24 h-0.5 bg-emerald-500 mx-auto"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biography Content -->
+    <section class="pb-20 px-6">
+        <div class="max-w-6xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <!-- Portrait -->
+<div class="fade-in">
+  <div class="relative inline-block">
+    <img src="profile.jpg" 
+         class="max-w-md w-auto h-auto rounded-lg shadow-lg object-cover">
+
+    <!-- Overlay yang ukurannya PERSIS sama gambar -->
+    <div class="absolute inset-0 rounded-lg bg-emerald-600/10"></div>
+  </div>
+</div>
+
+                <!-- Biography Text -->
+                <div class="space-y-8">
+                    <div class="fade-in">
+                        <h2 class="text-2xl font-medium mb-4 text-slate-800">About Me</h2>
+                        <p class="text-lg leading-relaxed text-slate-600 mb-6">
+                            I am Ibrahim Astra, a student, passionate STEM innovator, competitive athlete, and dedicated student leader who strives to push the boundaries of both academics and personal growth. My journey has been defined by curiosity, resilience, and a constant drive to transform challenges into opportunities.
+                        </p>
+                        <p class="text-lg leading-relaxed text-slate-600 mb-6">
+                            With a strong foundation in engineering and technology, I actively explore innovative solutions to real-world problems through academic research, competitions, and collaborative projects. At the same time, my achievements in taekwondo at regional and national levels have taught me discipline, focus, and perseverance—values I carry into every aspect of my life.
+                        </p>
+                        <p class="text-lg leading-relaxed text-slate-600">
+                            Beyond academics and athletics, I embrace leadership by fostering teamwork, inspiring peers, and contributing to communities that value knowledge, creativity, and progress. My goal is to continue bridging science, innovation, and leadership to make a meaningful impact on both local and global scales.
+                        </p>
+                    </div>
+
+                    <div class="fade-in">
+                        <h3 class="text-xl font-medium mb-4 text-slate-800">Education</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-2 border-emerald-500 pl-4">
+                                <h4 class="font-medium text-slate-800">SD Muhammadiyah 3 ICP Sumberrejo</h4>
+                                <p class="text-slate-600">Elementary School, 2014-2020</p>
+                                <p class="text-sm text-slate-500 mt-1">International Class Program</p>
+                            </div>
+                            <div class="border-l-2 border-emerald-500 pl-4">
+                                <h4 class="font-medium text-slate-800">MTsN 1 Kota Malang</h4>
+                                <p class="text-slate-600">Junior High School, 2020-2022</p>
+                                <p class="text-sm text-slate-500 mt-1">Acceleration Class Program</p>
+                            </div>
+                            <div class="border-l-2 border-emerald-500 pl-4">
+                                <h4 class="font-medium text-slate-800">MAN Insan Cendekia Serpong</h4>
+                                <p class="text-slate-600">Senior High School, 2022-Now</p>
+                                <p class="text-sm text-slate-500 mt-1">being normal person :D </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <h3 class="text-xl font-medium mb-4 text-slate-800">Skills & Expertise</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-slate-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-slate-800 mb-2">Design</h4>
+                                <ul class="text-sm text-slate-600 space-y-1">
+                                    <li>• UI/UX Design</li>
+                                    <li>• Graphic Design</li>
+                                    <li>• CAD & Blender Design</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-slate-800 mb-2">Engineering Simulation</h4>
+                                <ul class="text-sm text-slate-600 space-y-1">
+                                    <li>• Kerbal Space Program</li>
+                                    <li>• Plane Crazy</li>
+                                    <li>• Autodesk</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <h3 class="text-xl font-medium mb-4 text-slate-800">Philosophy</h3>
+                        <blockquote class="border-l-4 border-emerald-500 pl-6 italic text-lg text-slate-600">
+                            "When you're thinking your rivality with others feels sophiscating, it's not compeletely wrong. But never forget the main rival whole of life is no others but yourself."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-slate-400">&copy; 2025 Ibrahim Astra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = '0.2s';
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

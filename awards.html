@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards - Ibrahim Astra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #059669;
+            --accent: #10b981;
+            --muted: #f1f5f9;
+            --foreground: #475569;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .timeline-item {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .award-card {
+            transition: all 0.3s ease;
+        }
+        
+        .award-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-600">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-semibold text-slate-800">Ibrahim Astra</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-slate-600 hover:text-emerald-600">Home</a>
+                    <a href="biography.html" class="nav-link text-slate-600 hover:text-emerald-600">Biography</a>
+                    <a href="social.html" class="nav-link text-slate-600 hover:text-emerald-600">Social Media</a>
+                    <a href="awards.html" class="nav-link text-emerald-600">Awards</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-slate-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-6xl font-light mb-6 text-slate-800">Achievements</h1>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
+                    A collection of recognitions and milestones that mark my journey of growth and excellence.
+                </p>
+                <div class="w-24 h-0.5 bg-emerald-500 mx-auto"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Timeline -->
+    <section class="pb-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-emerald-200"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+
+                    <!-- Award 1 -->
+                    <div class="timeline-item relative flex items-start">
+                        <div class="absolute left-6 w-4 h-4 bg-emerald-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="ml-20">
+                            <div class="award-card bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-slate-800 mb-2">Student Immersion Awardee</h3>
+                                        <p class="text-emerald-600 font-medium">SD Muhammadiyah 3 ICP Bojonegoro</p>
+                                    </div>
+                                    <span class="text-sm text-slate-500 bg-slate-50 px-3 py-1 rounded-full">2016</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Selected as an awardee and participant of the Indonesia–Malaysia Student Immersion Program, representing school in an international academic and cultural exchange program.
+                                </p>
+                                <div class="mt-4 flex items-center text-sm text-slate-500">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    Academic Achievement
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award 2 -->
+                    <div class="timeline-item relative flex items-start">
+                        <div class="absolute left-6 w-4 h-4 bg-emerald-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="ml-20">
+                            <div class="award-card bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-slate-800 mb-2">Acceleration Program Graduate</h3>
+                                        <p class="text-emerald-600 font-medium">MTsN 1 Kota Malang</p>
+                                    </div>
+                                    <span class="text-sm text-slate-500 bg-slate-50 px-3 py-1 rounded-full">2021</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed">
+                                    One of the few students admitted into the prestigious Acceleration Program, completing junior high school in just two years.
+                                </p>
+                                <div class="mt-4 flex items-center text-sm text-slate-500">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    Academic Achievement
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award 3 -->
+                    <div class="timeline-item relative flex items-start">
+                        <div class="absolute left-6 w-4 h-4 bg-emerald-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="ml-20">
+                            <div class="award-card bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-slate-800 mb-2">Gold Medal – Pangdam V Brawijaya Taekwondo</h3>
+                                        <p class="text-emerald-600 font-medium">MTsN 1 Kota Malang</p>
+                                    </div>
+                                    <span class="text-sm text-slate-500 bg-slate-50 px-3 py-1 rounded-full">2023</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Won Gold Medal in the Kyorugi category (U45kg) at the Pangdam V Brawijaya Taekwondo Championship, demonstrating excellence in martial arts.
+                                </p>
+                                <div class="mt-4 flex items-center text-sm text-slate-500">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    Athletics / Extracurricular
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award 4 -->
+                    <div class="timeline-item relative flex items-start">
+                        <div class="absolute left-6 w-4 h-4 bg-emerald-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="ml-20">
+                            <div class="award-card bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-slate-800 mb-2">Silver Medal – DKI Jakarta Taekwondo</h3>
+                                        <p class="text-emerald-600 font-medium">MAN Insan Cendekia Serpong</p>
+                                    </div>
+                                    <span class="text-sm text-slate-500 bg-slate-50 px-3 py-1 rounded-full">2024</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Achieved Silver Medal in the Kyorugi category (U55kg) at the DKI Jakarta Taekwondo Championship, competing against top-level athletes.
+                                </p>
+                                <div class="mt-4 flex items-center text-sm text-slate-500">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    Athletics / Extracurricular
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award 5 -->
+                    <div class="timeline-item relative flex items-start">
+                        <div class="absolute left-6 w-4 h-4 bg-emerald-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="ml-20">
+                            <div class="award-card bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-slate-800 mb-2">2nd Place – YEA! STEM Finale</h3>
+                                        <p class="text-emerald-600 font-medium">Prasetya Mulya University</p>
+                                    </div>
+                                    <span class="text-sm text-slate-500 bg-slate-50 px-3 py-1 rounded-full">2024</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Secured 2nd place in the Young Entrepreneur Academy! STEM track on Environmental Innovation, presenting a sustainable technology solution.
+                                </p>
+                                <div class="mt-4 flex items-center text-sm text-slate-500">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    STEM Competition
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award 6 -->
+                    <div class="timeline-item relative flex items-start">
+                        <div class="absolute left-6 w-4 h-4 bg-emerald-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="ml-20">
+                            <div class="award-card bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-slate-800 mb-2">2nd Place – Mechanical Fest STEM</h3>
+                                        <p class="text-emerald-600 font-medium">Institut Teknologi Bandung (ITB)</p>
+                                    </div>
+                                    <span class="text-sm text-slate-500 bg-slate-50 px-3 py-1 rounded-full">2025</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Earned 2nd place in the Mechanical Fest STEM competition organized by HMM ITB, showcasing an innovative engineering project.
+                                </p>
+                                <div class="mt-4 flex items-center text-sm text-slate-500">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    STEM Competition
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award 7 -->
+                    <div class="timeline-item relative flex items-start">
+                        <div class="absolute left-6 w-4 h-4 bg-emerald-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="ml-20">
+                            <div class="award-card bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-slate-800 mb-2">Vice Coordinator – Environment Divison</h3>
+                                        <p class="text-emerald-600 font-medium">OS Cendekia</p>
+                                    </div>
+                                    <span class="text-sm text-slate-500 bg-slate-50 px-3 py-1 rounded-full">2023-2025</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Served as Vice Coordinator of the Environment Division, contributing to school-wide sustainability initiatives.
+                                </p>
+                                <div class="mt-4 flex items-center text-sm text-slate-500">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    Organization & Leadership
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="fade-in">
+                    <div class="text-3xl font-bold text-emerald-600 mb-2">2</div>
+                    <p class="text-slate-600">Academic Achievements</p>
+                </div>
+                <div class="fade-in">
+                    <div class="text-3xl font-bold text-emerald-600 mb-2">2</div>
+                    <p class="text-slate-600">Taekwondo Medals</p>
+                </div>
+                <div class="fade-in">
+                    <div class="text-3xl font-bold text-emerald-600 mb-2">2</div>
+                    <p class="text-slate-600">STEM Competitions</p>
+                </div>
+                <div class="fade-in">
+                    <div class="text-3xl font-bold text-emerald-600 mb-2">1</div>
+                    <p class="text-slate-600">International Program</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-slate-400">&copy; 2025 Ibrahim Astra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Timeline animation on scroll
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.timeline-item').forEach((el, index) => {
+            el.style.transitionDelay = `${index * 0.1}s`;
+            observer.observe(el);
+        });
+
+        // Stats animation
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = '0.2s';
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            statsObserver.observe(el);
+        });
+    </script>
+</body>
+</html>
